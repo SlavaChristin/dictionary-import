@@ -1,0 +1,29 @@
+<tools>
+
+   <tool id="dictionary-import" title="Dictionary Import" projectTypes="modeling">
+      <description>Import dictionary model from excel file</description>
+      <parameters>
+         <parameter name="p_excel_file"     title="File to Import (Excel)" type="file_ref" required="true" width="500" />
+         <parameter name="p_model" title="Model"   type="string" required="true" suggestion="project_models" width="300" />
+         <parameter name="p_object_tab"  title="Tab name for objects" type="string" required="false" />
+         <parameter name="p_column_tab"  title="Tab name for columns" type="string" required="false" />
+         <parameter name="p_mode" title="Mode" type="string" required="true">
+                <values>
+                    <string>Sync</string>
+                    <string>Import</string>
+                    <string>Import metadata only</string>
+                </values>
+         </parameter>
+         <parameter name="p_action" title="Action" type="string" required="true">
+                <values>
+                    <string>Preview</string>
+                    <string>Import</string>
+                </values>
+         </parameter>
+         <parameter name="p_field_mapping" title="Field Mapping" type="text" required="false" width="200" height="5" />
+      </parameters>
+
+      <output script="dictionary-import.groovy" type="html" />
+   </tool>
+
+</tools>
