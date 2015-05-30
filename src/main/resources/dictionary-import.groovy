@@ -1,8 +1,8 @@
-import java.io.InputStream;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.io.InputStream
+import java.util.Date
+import java.util.Iterator
+import java.util.Map
+import java.util.Set
 
 
 
@@ -20,53 +20,53 @@ import org.slf4j.Logger;
 
 
 import com.branegy.dbmaster.database.api.ModelService
-import com.branegy.dbmaster.model.Model;
-import com.branegy.dbmaster.model.ModelObject;
-import com.branegy.dbmaster.util.NameMap;
+import com.branegy.dbmaster.model.Model
+import com.branegy.dbmaster.model.ModelObject
+import com.branegy.dbmaster.util.NameMap
 
-import javax.persistence.EntityManager;
+import javax.persistence.EntityManager
 
-import com.branegy.util.InjectorUtil;
-
-
-
-import com.branegy.dbmaster.model.Column;
-import com.branegy.dbmaster.model.Parameter;
-import com.branegy.dbmaster.model.Table;
-import com.branegy.dbmaster.model.View;;
-import com.branegy.dbmaster.model.Procedure;
-import com.branegy.dbmaster.model.Function;
-
-import java.util.Collections;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
-
-import org.apache.commons.lang.StringUtils;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.slf4j.Logger;
-
-import com.branegy.dbmaster.custom.CustomFieldConfig;
-import com.branegy.dbmaster.custom.field.server.api.ICustomFieldService;
-import com.branegy.util.InjectorUtil;
+import com.branegy.util.InjectorUtil
 
 
-def findColumn(List<Column> list,String name){
-    if (list != null){
-        for (Column c:list){
-            if (c.getName().equals(name)){
+
+import com.branegy.dbmaster.model.Column
+import com.branegy.dbmaster.model.Parameter
+import com.branegy.dbmaster.model.Table
+import com.branegy.dbmaster.model.View
+import com.branegy.dbmaster.model.Procedure
+import com.branegy.dbmaster.model.Function
+
+import java.util.Collections
+import java.util.Date
+import java.util.HashMap
+import java.util.Iterator
+import java.util.LinkedHashMap
+import java.util.List
+import java.util.Map
+import java.util.Map.Entry
+import java.util.Set
+
+import org.apache.commons.lang.StringUtils
+import org.apache.poi.ss.usermodel.Cell
+import org.apache.poi.ss.usermodel.Row
+import org.apache.poi.ss.usermodel.Sheet
+import org.slf4j.Logger
+
+import com.branegy.dbmaster.custom.CustomFieldConfig
+import com.branegy.dbmaster.custom.field.server.api.ICustomFieldService
+import com.branegy.util.InjectorUtil
+
+
+def findColumn(List<Column> list,String name) {
+    if (list != null) {
+        for (Column c:list) {
+            if (c.getName().equals(name)) {
                 return c;
             }
-        } 
+        }
     }
-    return null;
+    return null
 }
 
 

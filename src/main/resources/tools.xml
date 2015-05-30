@@ -4,7 +4,7 @@
       <description>Import dictionary model from excel file</description>
       <parameters>
          <parameter name="p_excel_file"     title="File to Import (Excel)" type="file_ref" required="true" width="500" />
-         <parameter name="p_model" title="Model"   type="string" required="true" suggestion="project_models" width="300" />
+         <parameter name="p_model" title="Model"   type="string" required="true" suggestion="project_models2" width="300" />
          <parameter name="p_object_tab"  title="Tab name for objects" type="string" required="false" />
          <parameter name="p_column_tab"  title="Tab name for columns" type="string" required="false" />
          <parameter name="p_mode" title="Mode" type="string" required="true">
