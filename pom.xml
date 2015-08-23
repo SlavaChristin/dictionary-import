@@ -26,6 +26,7 @@
                <instructions>
                   <Tags>dictionary</Tags>
                   <Author>slava.christin</Author>
+                  <Require-Bundle>dbmaster-sync;bundle-version="1.0.16"</Require-Bundle>
                </instructions>
             </configuration>
          </plugin>
